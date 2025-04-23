@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Interactive contact form with JavaScript event handling and responsive design.">
+  <meta name="keywords" content="JavaScript, Contact Form, Responsive Design, Event Handling">
+  <title>JS Interactive Contact Form 🎯</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <div class="container">
+      <!-- 🎈 Event Handling + Interactive Elements Playground -->
+<div class="playground">
+    <h2>JS Event Handling & Interactivity</h2>
+  
+    <!-- Button click and color change -->
+    <button id="colorChangerBtn">Click Me to Change Color</button>
+  
+    <!-- Hover effect -->
+    <div id="hoverBox">Hover over me!</div>
+  
+    <!-- Keypress detection -->
+    <input type="text" id="keypressInput" placeholder="Type something..." />
+  
+    <!-- Double-click / Long press secret -->
+    <div id="secretBox">Double-click or Long-press me! 🤫</div>
+  
+    <!-- Image Gallery / Slideshow -->
+    <div class="gallery">
+      <img id="galleryImage" src="pexels-nguyendesigner-244132.jpg" alt="Gallery Image" />
+      
+      <button id="nextImage">Next Image</button>
+    </div>
+  
+    <!-- Tabs/Accordion -->
+    <div class="accordion">
+      <div class="tab" onclick="toggleTab(this)">Click for Info 1</div>
+      <div class="panel">This is content for Tab 1!</div>
+      <div class="tab" onclick="toggleTab(this)">Click for Info 2</div>
+      <div class="panel">This is content for Tab 2!</div>
+    </div>
+  </div>
+  
+    <div class="text">Contact us Form</div>
+    <form id="contactForm" action="#">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="firstName" aria-label="First Name" required>
+          <div class="underline"></div>
+          <label>First Name</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="lastName" required>
+          <div class="underline"></div>
+          <label>Last Name</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="email" required>
+          <div class="underline"></div>
+          <label>Email Address</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="website" required>
+          <div class="underline"></div>
+          <label>Contact</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data textarea">
+          <textarea id="message" rows="8" cols="80" required></textarea>
+          <div class="underline"></div>
+          <label>Write your message</label>
+        </div>
+      </div>
+      <div class="form-row submit-btn">
+        <div class="input-data">
+          <div class="inner"></div>
+          <input type="submit" value="submit">
+        </div>
+      </div>
+    </form>
+    <p id="confirmationMessage" style="color: rgb(21, 37, 21); display: none; text-align: center; margin-top: 20px;">
+         Your message has been sent!
+      </p>
+      
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
